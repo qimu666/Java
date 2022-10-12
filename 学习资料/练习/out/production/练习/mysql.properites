@@ -1,0 +1,6 @@
+user =root
+password =1234
+url=jdbc:mysql://localhost:3306/study?characterEncoding=UTF-8&rewriteBatchedStatements=true
+//?characterEncoding=utf8   字符集
+//?rewriteBatchedStatements=true 批处理
+driver=com.mysql.jdbc.Driver

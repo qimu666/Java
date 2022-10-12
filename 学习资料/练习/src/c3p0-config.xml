@@ -1,0 +1,46 @@
+<c3p0-config>
+    <named-config name="qimu">
+        <!--    连接参数-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/study</property>
+        <property name="user">root</property>
+        <property name="password">1234</property>
+
+        <!--    连接池-->
+        <!--    每次增长的连接数-->
+        <property name="acquireIncrement">5</property>
+        <!--    初始化连接的数量-->
+        <property name="initialPoolSize">10</property>
+        <!--    最小连接数量-->
+        <property name="minPoolSize">5</property>
+        <!--    最大连接数量-->
+        <property name="maxPoolSize">50</property>
+        <!--    每个连接对象可连接的最多的命令对象数-->
+        <property name="maxStatementsPerConnection">2</property>
+        <!--    超时时间，以毫秒为单位，1000毫秒==1秒-->
+        <property name="checkoutTimeout">5000</property>
+    </named-config>
+
+    <!--备用-->
+    <named-config name="otherc3p0">
+        <!--    连接参数-->
+
+        <property name="acquireIncrement">5</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxStatementsPerConnection">2</property>
+
+
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/study</property>
+        <property name="user">root</property>
+        <property name="password">1234</property>
+
+        <!--    连接池-->
+        <!--    初始化连接的数量-->
+        <property name="initialPoolSize">5</property>
+        <!--    最大连接数量-->
+        <property name="maxPoolSize">5</property>
+        <!--    超时时间，以毫秒为单位，1000毫秒==1秒-->
+        <property name="checkoutTimeout">5000</property>
+    </named-config>
+</c3p0-config>
